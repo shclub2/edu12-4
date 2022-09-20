@@ -11,7 +11,7 @@ COPY pom.xml ./
 COPY src ./src
 
 COPY . ./
-RUN mvn package
+RUN mvn package -DskipTests
 
 #
 # Package stage
